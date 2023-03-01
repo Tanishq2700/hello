@@ -1,0 +1,23 @@
+#include<stdio.h>
+#include<stdlib.h>
+main()
+    int number;
+	
+	printf("\n\tType a number: ");
+	scanf("%d",&number);
+	
+	switch(number%2){
+	    case 0: // "case 0" means all numbers divided by two with zero remainder
+	        printf("\n\t---- EVEN NUMBER ----\n\n");
+	        break;
+	    
+	    default:// all those numbers that divided by two give no remainder zero
+	    	printf("\n\t---- ODD NUMBER ----\n\n");
+	    	break;
+		
+	}
+	system("pause");
+	sleep(1);
+	system("cls");
+	return main();
+}
